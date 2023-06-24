@@ -1,0 +1,23 @@
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.explanatory-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.explanatory-content h2 {
+   color: var(--title-color);
+}
+
+.explanatory-content p {
+   color: var(--text-color);
+}
+
+.button {
+}
+
+.featured-image {
+}
