@@ -1,23 +1,68 @@
-main {
+.content {
    display: flex;
    justify-content: center;
    align-items: center;
+   gap: 1rem;
+   padding: 1rem 9rem;
 }
-.explanatory-content {
+.description {
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   gap: 6rem;
+}
+
+.description__text {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.description__text > h2 {
+   color: var(--title-color);
    display: flex;
    flex-direction: column;
 }
 
-.explanatory-content h2 {
-   color: var(--title-color);
+.description__text > h2 > span {
+   font-size: 4rem;
 }
 
-.explanatory-content p {
+.description__text > p {
    color: var(--text-color);
 }
 
-.button {
+.description__icons {
+   display: flex;
+   justify-content: space-around;
+   gap: 1rem;
 }
 
-.featured-image {
+.description__icons img {
+   height: 1.5rem;
+}
+
+.button {
+   cursor: pointer;
+   background-color: var(--background-button);
+   color: var(--text-button);
+   border-radius: 1.5rem;
+   padding: 1rem;
+   width: 50%;
+   transition: background 0.5s ease-in-out;
+}
+
+.button:hover {
+   background-color: var(--button-hover);
+}
+
+.main-image {
+   display: flex;
+   justify-content: center;
+   width: 55%;
+   max-height: 500px;
+}
+
+.main-image img {
+   max-height: inherit;
 }

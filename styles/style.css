@@ -5,12 +5,22 @@
    --title-color: hsl(0, 0%, 8%);
    --text-color: hsl(0, 0%, 41%);
    --background: hsl(0, 0%, 98%);
+   --text-button: hsl(0, 0%, 98%);
+   --background-button: hsl(0, 0%, 8%);
+   --button-hover: hsl(0, 0%, 26%);
 }
 
 * {
    font-family: 'Epilogue', sans-serif;
+   font-size: 1rem;
+   padding: 0;
+   margin: 0;
+   outline: none;
+   border: none;
+   gap: 0;
 }
 
 body {
    background-color: var(--background);
+   height: 100vh;
 }
