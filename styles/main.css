@@ -38,8 +38,8 @@
    gap: 1rem;
 }
 
-.description__icons img {
-   height: 1.5rem;
+.description__icons > div > img {
+   width: 100%;
 }
 
 .button {
