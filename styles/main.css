@@ -1,7 +1,7 @@
 .content {
    display: flex;
    justify-content: center;
-   gap: 5rem;
+   gap: 4rem;
    padding-top: 3rem;
 }
 
@@ -105,14 +105,18 @@
       text-align: center;
    }
 
+   .description__text > h2 > span {
+      font-size: 3rem;
+   }
+
    .description__text > p {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       padding: 0 3rem;
    }
 
    .button {
       font-size: 2rem;
-      padding: 1.5rem;
+      padding: 1.2rem;
    }
 
    .main-image {
@@ -129,5 +133,25 @@
       display: flex;
       justify-content: center;
       width: 100%;
+   }
+}
+
+@media (max-width: 494px) {
+   .description__text {
+      gap: 2rem;
+   }
+
+   .description__text > h2 > span {
+      font-size: 2.5rem;
+   }
+
+   .description__text > p {
+      font-size: unset;
+      padding: 0 1rem;
+   }
+
+   .button {
+      font-size: unset;
+      padding: 1rem;
    }
 }
