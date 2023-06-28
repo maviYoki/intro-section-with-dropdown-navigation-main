@@ -1,21 +1,22 @@
 .content {
    display: flex;
    justify-content: center;
-   align-items: center;
-   gap: 1rem;
-   padding: 1rem 9rem;
+   gap: 7rem;
+   padding-top: 3rem;
 }
+
 .description {
    display: flex;
    flex-direction: column;
-   width: 45%;
-   gap: 6rem;
+   justify-content: space-between;
+   width: 35%;
 }
 
 .description__text {
    display: flex;
    flex-direction: column;
    gap: 3rem;
+   justify-content: center;
 }
 
 .description__text > h2 {
@@ -30,16 +31,13 @@
 
 .description__text > p {
    color: var(--text-color);
+   padding: 0 3rem 0 0;
 }
 
 .description__icons {
    display: flex;
    justify-content: space-around;
    gap: 1rem;
-}
-
-.description__icons > div > img {
-   width: 100%;
 }
 
 .button {
@@ -56,10 +54,14 @@
    background-color: var(--button-hover);
 }
 
+.description__icons > div > img {
+   width: 100%;
+}
+
 .main-image {
    display: flex;
    justify-content: center;
-   width: 55%;
+   width: 30%;
    max-height: 500px;
 }
 
