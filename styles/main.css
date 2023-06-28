@@ -141,6 +141,11 @@
       gap: 2rem;
    }
 
+   .description__text > h2 {
+      display: flex;
+      flex-direction: column;
+   }
+
    .description__text > h2 > span {
       font-size: 2.5rem;
    }
