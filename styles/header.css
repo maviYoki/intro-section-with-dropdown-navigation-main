@@ -1,0 +1,58 @@
+.nav-bar {
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+   font-size: 0.8rem;
+}
+.nav-bar__link {
+   font-size: 0.9rem;
+}
+
+.nav-bar__principal {
+   display: flex;
+   gap: 4rem;
+}
+
+.nav-bar__logo h2 {
+   color: var(--title-color);
+   font-size: 1.8rem;
+   align-items: center;
+}
+
+.nav-bar__list {
+   display: flex;
+}
+
+.nav-bar__list ul {
+   display: flex;
+   align-items: center;
+   gap: 3rem;
+}
+
+.nav-bar__link {
+   color: var(--text-color);
+}
+
+.nav-bar__link img {
+   padding: 0 0.5rem;
+}
+
+.nav-bar__accsess {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.nav-bar__login button a,
+.nav-bar__register button a {
+   font-size: 0.9rem;
+   color: var(--text-color);
+}
+
+.nav-bar__register {
+   border: 1px;
+   border-style: solid;
+   padding: 0.5rem;
+   border-color: var(--text-color);
+   border-radius: 11px;
+}
