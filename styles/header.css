@@ -5,6 +5,10 @@ header {
    font-size: 0.8rem;
 }
 
+button {
+   cursor: pointer;
+}
+
 button,
 a {
    font-size: 0.88rem;
@@ -52,6 +56,13 @@ a {
    border: solid 1px;
    border-radius: 10px;
    padding: 0.74rem 1rem;
+   transition-property: color, background;
+   transition-duration: 0.5s;
+}
+
+.register:hover {
+   background-color: var(--background-button);
+   color: var(--text-button);
 }
 
 .burguer {
