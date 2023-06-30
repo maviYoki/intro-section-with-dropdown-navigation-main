@@ -1,26 +1,30 @@
-.nav-bar {
+header {
    display: flex;
    justify-content: space-between;
-   padding: 1rem;
+   padding: 1rem 3rem;
    font-size: 0.8rem;
 }
-.nav-bar__link {
-   font-size: 0.9rem;
+
+button,
+a {
+   font-size: 0.88rem;
 }
 
-.nav-bar__principal {
+.logo-nav-wrapper {
    display: flex;
    gap: 4rem;
-}
-
-.nav-bar__logo h2 {
-   color: var(--title-color);
-   font-size: 1.8rem;
    align-items: center;
 }
 
-.nav-bar__list {
+.logo {
+   font-size: 2rem;
+}
+
+.nav-bar__item button {
+   color: var(--text-color);
    display: flex;
+   gap: 0.5rem;
+   align-items: center;
 }
 
 .nav-bar__list ul {
@@ -33,26 +37,26 @@
    color: var(--text-color);
 }
 
-.nav-bar__link img {
-   padding: 0 0.5rem;
-}
-
-.nav-bar__accsess {
+.access {
    display: flex;
-   align-items: center;
    gap: 2rem;
 }
 
-.nav-bar__login button a,
-.nav-bar__register button a {
-   font-size: 0.9rem;
+.access a {
+   display: flex;
+   align-items: center;
    color: var(--text-color);
 }
 
-.nav-bar__register {
-   border: 1px;
-   border-style: solid;
-   padding: 0.5rem;
-   border-color: var(--text-color);
-   border-radius: 11px;
+.register {
+   border: solid 1px;
+   border-radius: 10px;
+   padding: 0.74rem 1rem;
+}
+
+.burguer {
+   display: none;
+}
+
+@media (max-height: 768px) {
 }

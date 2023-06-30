@@ -17,26 +17,28 @@
    </head>
    <body>
       <header>
-         <nav class="nav-bar">
-            <div class="nav-bar__principal">
-               <div class="nav-bar__logo">
-                  <h2>snap</h2>
-               </div>
+         <div class="logo-nav-wrapper">
+            <h1 class="logo">snap</h1>
+            <nav class="nav-bar">
                <div class="nav-bar__list">
                   <ul>
                      <li class="nav-bar__item">
                         <button>
-                           <a href="#" class="nav-bar__link">
-                              Features
-                              <img src="images/icon-arrow-down.svg" alt="" />
-                           </a>
+                           Features
+                           <img
+                              src="images/icon-arrow-down.svg"
+                              alt="down arrow"
+                           />
                         </button>
                      </li>
                      <li class="nav-bar__item">
-                        <a href="#" class="nav-bar__link">
+                        <button>
                            Company
-                           <img src="images/icon-arrow-down.svg" alt="" />
-                        </a>
+                           <img
+                              src="images/icon-arrow-down.svg"
+                              alt="down arrow"
+                           />
+                        </button>
                      </li>
                      <li class="nav-bar__item">
                         <a href="#" class="nav-bar__link"> Careers </a>
@@ -46,20 +48,15 @@
                      </li>
                   </ul>
                </div>
-            </div>
-            <div class="nav-bar__accsess">
-               <div class="nav-bar__login">
-                  <button>
-                     <a href="#"> login </a>
-                  </button>
-               </div>
-               <div class="nav-bar__register">
-                  <button>
-                     <a href="#"> register </a>
-                  </button>
-               </div>
-            </div>
-         </nav>
+            </nav>
+         </div>
+         <div class="access">
+            <a href="#" class="login"> Login </a>
+            <a href="#" class="register"> Register </a>
+         </div>
+         <button class="burguer">
+            <img src="./images/icon-menu.svg" alt="" />
+         </button>
       </header>
       <main>
          <div class="content">
@@ -106,10 +103,6 @@
                   />
                </picture>
             </div>
-         </div>
-         <div>
-            <img src="images/icon-arrow-up.svg" alt="" />
-            <img src="images/icon-calendar.svg" alt="" />
          </div>
       </main>
    </body>
