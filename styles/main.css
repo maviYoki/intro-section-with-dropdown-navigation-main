@@ -26,12 +26,6 @@ main {
 }
 
 .description__text > h2 {
-   color: var(--title-color);
-   display: flex;
-   flex-direction: column;
-}
-
-.description__text > h2 > span {
    font-size: 4rem;
 }
 
@@ -82,6 +76,10 @@ main {
 }
 
 @media (max-width: 768px) {
+   br {
+      display: none;
+   }
+
    .content {
       display: flex;
       justify-content: center;
@@ -105,14 +103,11 @@ main {
    }
 
    .description__text > h2 {
-      display: flex;
-      flex-direction: row;
-      gap: 0.65rem;
-      text-align: center;
+      padding: 0 1rem;
    }
 
    .description__text > h2 > span {
-      font-size: 3rem;
+      font-size: 4rem;
    }
 
    .description__text > p {
@@ -139,25 +134,5 @@ main {
       display: flex;
       justify-content: center;
       width: 100%;
-   }
-}
-
-@media (max-width: 494px) {
-   .description__text {
-      gap: 2rem;
-   }
-
-   .description__text > h2 {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .description__text > p {
-      font-size: unset;
-   }
-
-   .button {
-      font-size: unset;
-      padding: 1rem;
    }
 }
