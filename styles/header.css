@@ -69,5 +69,13 @@ a {
    display: none;
 }
 
-@media (max-height: 768px) {
+@media (max-width: 768px) {
+   .nav-bar,
+   .access {
+      display: none;
+   }
+
+   .burguer {
+      display: block;
+   }
 }
