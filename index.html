@@ -22,29 +22,86 @@
             <nav class="nav-bar">
                <div class="nav-bar__list">
                   <ul>
-                     <li class="nav-bar__item">
-                        <button>
+                     <li class="nav-bar__item nav-bar__item-menu-toggle">
+                        <button class="dropdown__button">
                            Features
-                           <img
-                              src="images/icon-arrow-down.svg"
-                              alt="down arrow"
-                           />
+                           <svg
+                              class="arrow"
+                              width="10"
+                              height="6"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke="#686868"
+                                 stroke-width="1.5"
+                                 fill="none"
+                                 d="m1 1 4 4 4-4"
+                              />
+                           </svg>
                         </button>
+                        <div class="dropdown-content dropdown-content__left">
+                           <ul>
+                              <li>
+                                 <img
+                                    src="./images/icon-todo.svg"
+                                    alt="to do list icon"
+                                 />
+                                 <a href="#">To do List</a>
+                              </li>
+                              <li>
+                                 <img
+                                    src="./images/icon-calendar.svg"
+                                    alt="calendar icon"
+                                 />
+                                 <a href="#">Calendar </a>
+                              </li>
+                              <li>
+                                 <img
+                                    src="./images/icon-reminders.svg"
+                                    alt=" remiders icon"
+                                 />
+                                 <a href="#">Reminders</a>
+                              </li>
+                              <li>
+                                 <img
+                                    src="./images/icon-planning.svg"
+                                    alt="planning icon"
+                                 />
+                                 <a href="#">Planing </a>
+                              </li>
+                           </ul>
+                        </div>
                      </li>
-                     <li class="nav-bar__item">
-                        <button>
+                     <li class="nav-bar__item nav-bar__item-menu-toggle">
+                        <button class="dropdown__button">
                            Company
-                           <img
-                              src="images/icon-arrow-down.svg"
-                              alt="down arrow"
-                           />
+                           <svg
+                              class="drow-arrow"
+                              width="10"
+                              height="6"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 stroke="#686868"
+                                 stroke-width="1.5"
+                                 fill="none"
+                                 d="m1 1 4 4 4-4"
+                              />
+                           </svg>
                         </button>
+                        <div class="dropdown-content">
+                           <ul>
+                              <li><a href="#"> History </a></li>
+                              <li><a href="#"> Our Team </a></li>
+                              <li><a href="#"> Blog </a></li>
+                           </ul>
+                        </div>
                      </li>
                      <li class="nav-bar__item">
-                        <a href="#" class="nav-bar__link"> Careers </a>
+                        <a href="#"> Careers </a>
                      </li>
                      <li class="nav-bar__item">
-                        <a href="#" class="nav-bar__link"> About </a>
+                        <a href="#"> About </a>
                      </li>
                   </ul>
                </div>
@@ -55,7 +112,7 @@
             <a href="#" class="register"> Register </a>
          </div>
          <button class="burguer">
-            <img src="./images/icon-menu.svg" alt="" />
+            <img src="./images/icon-menu.svg" alt="menu icon" />
          </button>
       </header>
       <main>

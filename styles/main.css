@@ -8,7 +8,7 @@ main {
    display: flex;
    justify-content: center;
    gap: 4rem;
-   padding-top: 5rem;
+   padding-top: 7rem;
 }
 
 .description {
@@ -50,10 +50,13 @@ main {
    padding: 1rem;
    width: 50%;
    transition: background 0.4s ease-in-out;
+   border: 1px;
+   border-style: solid;
 }
 
 .button:hover {
-   background-color: var(--button-hover);
+   background-color: var(--background);
+   border-color: var(--background-button);
 }
 
 .description__icons > div > img {
@@ -106,8 +109,8 @@ main {
       padding: 0 1rem;
    }
 
-   .description__text > h2 > span {
-      font-size: 4rem;
+   .description__text > h2 {
+      font-size: 3rem;
    }
 
    .description__text > p {
