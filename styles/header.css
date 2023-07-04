@@ -51,6 +51,12 @@ a {
    padding: 1rem;
 }
 
+.dropdown-content ul > li {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+
 .dropdown-content a {
    white-space: nowrap;
 }
@@ -87,10 +93,8 @@ button:hover {
    color: var(--title-text);
 }
 
-.dropdown-content ul > li {
-   display: flex;
-   gap: 1rem;
-   align-items: center;
+.block {
+   display: block;
 }
 
 .access {
