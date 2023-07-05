@@ -1,9 +1,16 @@
-const buttonNav = document.querySelectorAll('.dropdown__button');
-const dropdownMenu = document.querySelectorAll('.dropdown-content');
+const dropdownButtonList = document.querySelectorAll('.dropdown__button');
+const dropdownMenuList = document.querySelectorAll('.dropdown-content');
+const animationArrowList = document.querySelectorAll('.arrow-icon');
+const colorButtonList = document.querySelectorAll('.dropdown__button');
 
-for (let i = 0; i < buttonNav.length; i++) {
-   function toggleDropdown() {
-      dropdownMenu[i].classList.toggle('block');
-   }
-   buttonNav[i].addEventListener('click', toggleDropdown);
-}
+dropdownButtonList.forEach((button, i) => {
+   button.addEventListener('click', () => {
+      const elementArray = [
+         dropdownMenuList[i],
+         animationArrowList[i],
+         colorButtonList[i],
+      ];
+
+      elementArray.forEach(e => e.classList.toggle('open'));
+   });
+});

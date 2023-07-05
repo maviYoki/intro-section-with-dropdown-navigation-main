@@ -72,14 +72,21 @@ a {
    align-items: center;
 }
 
-.arrow path {
+.arrow__svg .arrow__path {
    transform-origin: center;
    transition-property: stroke, transform;
    transition-duration: 0.5s;
 }
 
-.dropdown__button:hover .arrow path {
-   transform: rotate(180deg);
+.dropdown__button:hover .arrow__svg .arrow__path {
+   stroke: hsl(0, 0%, 8%);
+}
+
+.rotate {
+   rotate: 180deg;
+}
+
+.rotate path {
    stroke: hsl(0, 0%, 8%);
 }
 
@@ -93,8 +100,20 @@ button:hover {
    color: var(--title-text);
 }
 
-.block {
+.dropdown-content.open {
    display: block;
+}
+
+.arrow-icon.open {
+   rotate: 180deg;
+}
+
+.arrow-icon.open path {
+   stroke: hsl(0, 0%, 8%);
+}
+
+.dropdown__button.open {
+   color: var(--title-text);
 }
 
 .access {
@@ -127,14 +146,13 @@ button:hover {
    .logo {
       font-size: 3rem;
    }
+   .burguer {
+      display: block;
+   }
 
    .nav-bar,
    .access {
       display: none;
-   }
-
-   .burguer {
-      display: block;
    }
 
    header {
